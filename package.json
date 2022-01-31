@@ -1,0 +1,17 @@
+{
+  "name": "diploma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "delicious-hamburgers": "^1.2.0",
+    "normalize.scss": "^0.1.0",
+    "swiper": "^7.4.1"
+  }
+}

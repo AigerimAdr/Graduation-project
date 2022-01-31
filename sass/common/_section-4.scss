@@ -1,0 +1,100 @@
+
+.section-4 {
+    
+    @include laptop {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    @include desktop {
+        max-width: 1000px;
+        margin-left: 250px;
+    }
+}
+
+.swiper-2 {
+    max-width: 500px;
+    
+    @include tablet {
+        max-width: 650px;
+        margin-left: 80px;
+    }
+    @include laptop {
+        max-width: 1000px;
+        margin-left: 50px;
+    }
+}
+.section-4-prev {
+    padding: 270px 0 0 360px;
+
+    @include tablet {
+        padding: 270px 0 0 580px;
+    }
+    @include laptop {
+        padding: 270px 0 0 750px;
+    }
+    @include desktop {
+        padding: 270px 0 0 870px;
+    }
+}
+.section-4-next {
+    padding: 270px 50px 0 0;
+
+    @include tablet {
+        padding: 270px 0 0 0px;
+    }
+    @include desktop {
+        padding: 270px 0 0 0;
+    }
+
+}
+.section-4-next::after,
+.section-4-prev::after {
+    display: none;
+}
+
+
+
+.section-4__card {
+    max-width: 500px;
+    text-align: center;
+}
+.section-4__img {
+    max-width: 100%;
+}
+
+.img-4 {
+    border-radius: 20px 20px 0px 0px;
+}
+.section-4__img {
+    margin-top: 50px;
+}
+.section-4__name {
+    font-family: 'Alegreya';
+    font-weight: bold;
+    font-size: 24px;
+}
+.section-4__position {
+    font-family: 'Alegreya';
+    font-size: 20px;
+}   
+
+
+
+
+.section-4__minititle {
+    font-size: 26px;
+    text-align: center;
+    color: $second-color;
+    font-family: 'Josefin Sans';
+}
+
+.section-4__title {
+    max-width: 445px;
+    margin: 0 auto;
+    padding-top: 28px;
+    font-size: 44px;
+    font-family: 'Josefin Sans';
+    line-height: 57px;
+    text-align: center;
+    color: $text-color;
+}

@@ -1,0 +1,277 @@
+.section-5 {
+    margin: 300px auto;
+
+    @include laptop {
+        display: flex;
+        margin-top: 200px;
+        margin-left: 80px;
+    }
+    @include desktop {
+    display: flex;
+    max-width: 1169px;
+    margin: 205px;
+    margin-left: 215px;
+    font-family: 'Josefin Sans';
+    }
+}
+
+.section-5__box {
+    position: relative;
+}
+
+.section-5__card {
+    position: absolute;
+    max-width: 424px;
+    background: #FFFFFF;
+    border-radius: 2px 100px 2px 2px;
+    top: 200px;
+    right: -10px;
+
+    @include laptop {
+        top: 250px;
+        right: -350px;
+    }
+    @include desktop {
+        max-width: 624px;
+        background: #FFFFFF;
+        border-radius: 2px 100px 2px 2px;
+        top: 250px;
+        right: -570px;
+    }
+}
+.slide-2 {
+    background-color: rgb(141, 141, 212);
+}
+.slide-3 {
+    background: rgb(209, 209, 123);
+}
+
+.section-5-next {
+    padding: 180px 50px 0 0;
+}
+.section-5-prev {
+    padding: 180px 0 0 310px;
+
+    @include tablet {
+        padding: 180px 0 0 310px;
+    }
+    @include desktop {
+        padding: 180px 0 0 510px;
+    }
+}
+
+.section-5-prev::after,
+.section-5-next::after {
+    display: none;
+}
+
+.section-5__text {
+    padding: 59px 69px 0 69px;
+    font-style: italic;
+    font-size: 16px;
+    color: $text-color;
+    line-height: 35px;
+
+    @include laptop {
+        font-size: 18px; 
+    }
+    @include desktop {
+        font-size: 22px;
+    }
+}
+.section-5__name {
+    padding: 19px 0 0 69px;
+    font-weight: bold;
+    font-size: 20px;
+    
+    @include desktop {
+        font-size: 24px;
+    }
+}
+.section-5__location {
+    padding-left: 69px;
+    padding-bottom: 40px;
+    font-size: 15px;
+
+    @include desktop {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+.section-5__info {
+    position: relative;
+    margin-top: -950px;
+    margin-left: 20px;
+
+    @include tablet {
+        margin-top: -950px;
+        margin-left: 160px;
+    }
+    @include laptop {
+        margin-top: unset;
+        margin-left: 20px;
+    }
+    @include desktop {
+        padding-left: 100px; 
+    }
+}
+.section-5__minititle {
+    font-size: 26px;
+    text-align: center;
+    color: $second-color;
+
+    @include tablet {
+        margin-left: -150px; 
+        text-align: center;
+    }
+
+    @include laptop {
+        margin-left: unset;
+        text-align: start;
+    }
+
+    @include desktop {
+        text-align: start;
+    }
+}
+.section-5__title {
+    max-width: 445px;
+    font-size: 44px;
+    text-align: center; 
+    color: $text-color;
+    line-height: 57px;
+
+    @include tablet {
+        text-align: center;
+    }
+    @include laptop {
+        text-align: start;
+        font-size: 40px;
+    }
+    @include desktop {
+        text-align: start;
+        max-width: 445px;
+        font-size: 44px;
+    }
+}
+.section-5__decor {
+    display: none;
+
+    @include laptop {
+        position: absolute;
+        display: unset;
+        top: 590px;
+        left: 250px;
+        z-index: -5;
+    }
+    @include desktop {
+        position: absolute;
+        top: 580px;
+        left: 520px;
+        z-index: -5;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .section-5 {
+//     display: flex;
+//     max-width: 1169px;
+//     margin: 205px auto;
+//     font-family: 'Josefin Sans';
+// }
+
+
+// .section-5__box {
+//     position: relative;
+// }
+// .section-5__card {
+//     position: absolute;
+//     max-width: 624px;
+//     background: #FFFFFF;
+//     border-radius: 2px 100px 2px 2px;
+//     top: 270px;
+//     right: -570px;
+// }
+// .section-5__text {
+//     padding-top: 59px;
+//     padding-left: 69px;
+//     padding-right: 69px;
+//     font-style: italic;
+//     font-size: 22px;
+//     color: $text-color;
+//     line-height: 35px;
+// }
+// .section-5__name {
+//     padding-left: 69px;
+//     padding-top: 19px;
+//     font-weight: bold;
+//     font-size: 24px;
+// }
+// .section-5__location {
+//     padding-left: 69px;
+//     padding-bottom: 40px;
+//     font-size: 20px;
+// }
+
+// .section-5__info {
+//     position: relative;
+//     padding-left: 100px; 
+// }
+
+// .section-5__minititle {
+//     font-size: 26px;
+//     text-align: start;
+//     color: $second-color;
+// }
+// .section-5__title {
+//     max-width: 445px;
+//     font-size: 44px;
+//     text-align: start;
+//     color: $text-color;
+//     line-height: 57px;
+// }
+// .section-5__decor {
+// position: absolute;
+// top: 580px;
+// left: 520px;
+// z-index: -5;
+// }

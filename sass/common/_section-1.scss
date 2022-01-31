@@ -1,0 +1,127 @@
+.section-1 {
+    @include desktop {
+        max-width: 1300px;
+        margin: 171px 150px;
+    }
+}
+.swiper-1 {
+    @include phone {
+        max-width: 270px;
+    }
+    @include tablet {
+        max-width: 630px;
+    }
+    @include laptop {
+        max-width: 900px;
+    }
+    @include desktop {
+        max-width: 1200px;
+    }
+}
+
+.section-1-prev::after,
+.section-1-next::after {
+    display: none;
+}
+
+.section-1-prev {
+    padding: 180px 0 0 200px ;
+
+    @include tablet {
+        padding: 180px 0 0 550px ; 
+    }
+    @include laptop {
+        padding: 180px 0 0 820px;
+    }
+    @include desktop {
+        padding: 200px 0 0 1120px ;
+    }
+}
+.section-1-next {
+    padding: 180px 0 0 20px ;
+
+    @include tablet {
+        padding: 180px 0 0 0 ; 
+    }
+    
+    @include desktop {
+        padding: 200px 0 0 0 ;
+    }
+}
+
+.section-1__cards {
+    align-items: center;
+    font-family: 'Alegreya';
+    font-weight: bold;
+    padding-bottom: 80px;
+
+    @include tablet {
+        margin-left: 50px;
+    }
+
+    @include laptop {
+        margin-left: 30px;
+    }
+    @include desktop {
+        padding-bottom: 80px;
+    }
+}
+
+.section-1__card {
+    max-width: 270px;
+    max-height: 282px;
+    margin-top: 57px;
+    border-radius: 5px 5px 5px 35px;
+    background: #FFFFFF;
+
+    &:hover {
+        max-height: 350px;
+    }
+}
+.section-1__more{
+    display: none;
+    font-size: 20px;
+    text-align: center;
+    color: $second-color;
+}
+.section-1__card:hover .section-1__more {
+    display: block;
+    padding-bottom: 30px;
+}
+
+.setion-1__pic {
+    padding-top: 64px;
+    padding-left: 104px;
+    padding-right: 104px; 
+}
+.image-3 {
+    margin-top: -10px;
+}
+
+.section-1__card--title {
+    max-width: 97px;
+    margin: 0 auto;
+    padding: 47px 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.section-1__minititle {
+    margin-top: 150px;
+    font-size: 26px;
+    text-align: center;
+    color: $second-color;
+    font-family: 'Josefin Sans';
+}
+
+.section-1__title {
+    max-width: 594px;
+    margin: 0 auto;
+    padding-top: 28px;
+    font-size: 44px;
+    text-align: center;
+    color: $text-color;
+    font-family: 'Josefin Sans';
+}

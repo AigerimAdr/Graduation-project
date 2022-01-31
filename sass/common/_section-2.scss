@@ -1,0 +1,130 @@
+.section-2 {
+    @include laptop {
+        display: flex;
+    }
+    @include desktop {
+    display: flex;
+    max-width: 1300px;
+    margin-top: -50px;
+    margin-left: 215px;
+    }
+}
+
+.section-2__pictures {
+    position: relative;
+    margin: 100px auto;
+
+    @include tablet {
+        margin: 100px 110px;
+    }
+    @include laptop {
+        margin-top: 100px;
+    }
+    @include desktop {
+        margin: 100px 0;    
+    }
+}
+.section-2__pic {
+    @include laptop{
+        max-width: 500px;
+    }
+    @include desktop{
+        max-width: unset;
+    }
+} 
+
+.section-2__decor {
+    position: absolute;
+    bottom: 576px;
+    left: 5px;
+
+    @include tablet {
+        left: -50px;
+    }
+    @include laptop {
+        bottom: 500px;
+    }
+    @include desktop{
+        bottom: 576px;
+    }
+}
+
+.section-2__info {
+    margin: 50px 50px;
+
+    @include tablet {
+        margin: 50px 110px;
+    }
+    @include laptop {
+        margin-top: 120px;
+        margin-left: -50px;
+    }
+    @include desktop {
+        margin-top: 150px;
+        margin-left: 104px;
+    }
+}
+.section-2__subtitle {
+    font-size: 26px;
+    color: $second-color;
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+}
+.section-2__title {
+    max-width: 483px;
+    margin-top: 28px;
+    font-size: 44px;
+    color: $text-color;
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    line-height: 50px;
+
+    @include laptop {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    @include desktop {
+        max-width: 500px;
+        font-size: 44px;
+    line-height: 50px;
+
+    }
+}
+
+.section-2__text {
+    max-width: 502px;
+    font-size: 22px;
+    color: $text-color;
+    line-height: 35px;
+    font-family: 'Alegreya';
+
+    @include tablet {
+        max-width: 600px;    
+    }
+    @include laptop {
+        max-width: 400px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    @include desktop {
+        max-width: 750px;
+        font-size: 22px;
+    }
+}
+
+.section-2__btn {
+    margin: 20px 100px;
+    background: $second-color;
+    color: #FFFFFF;
+    font-family: 'Alegreya';
+
+    @include tablet {
+        margin: 0 200px;
+    }
+    @include laptop {
+        margin: 20px 50px;
+    }
+    @include desktop {
+        margin: 20px 0;
+    }
+}

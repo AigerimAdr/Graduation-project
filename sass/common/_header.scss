@@ -1,0 +1,264 @@
+.header {
+    @include desktop {
+        max-width: 1300px;
+        margin-left: 215px;
+    }
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 1rem;
+    font-family: 'Alegreya';
+    font-weight: normal;
+
+    @include tablet {
+        padding-left: 50px;
+    }
+
+    @include laptop {
+        padding-left: 150px; 
+    }
+    @include desktop {
+        justify-content: unset;
+        padding-left: unset;
+    }
+}
+.header__navbar {
+    @include pos-overlay(rgba($add-color, 0.9));
+    @include flex(center, center, $dir: column);
+    transform: translateY(-100%) rotateX(-45deg);
+    transition: .4s ease-out;
+
+    @include laptop {
+        position: static;
+        transform: unset;
+        flex-direction: row;
+        background: unset;
+    }
+    @include desktop {
+        position: static;
+        transform: unset;
+        flex-direction: row;
+        background: unset;
+    }
+    &.active {
+        transform: translateX(0);
+    }
+}
+.header__link {
+    @include adaptiv-font(24, 25);
+    text-decoration: none;
+    line-height: 160%;
+    color: $text-color;
+    margin-bottom: 1rem;
+
+    @include laptop {
+        padding-right: 90px;
+    }
+    @include desktop {
+        padding-right: 60px;
+    }
+}
+.hamburger {
+
+    @include tablet {
+        margin-right: 50px;
+    }
+
+    @include laptop {
+        display: none;
+    }
+    @include desktop {
+        display: none;
+    }
+}
+.header__logo {
+    padding-right: 6rem;
+}
+
+.header__info {
+    @include laptop {
+        position: relative;
+        padding-top: 100px ;
+    }
+    @include desktop {
+        position: relative;
+        padding-top: 150px ;
+    }
+}
+
+.header__sub-info {
+    @include flex (center, center);
+    color: $second-color;
+    font-family: 'Josefin Sans';
+
+    @include desktop {
+        position: absolute;
+        justify-content: unset;
+    }
+}
+
+.header__sub-line {
+    min-width: 26px;
+    min-height: 2px;
+    background-color: $second-color;
+    margin-top: 10px;
+    }
+
+.header__sub-title {
+    padding: 0 5px;
+    color: $second-color;
+    font-family: 'Josefin Sans';
+}
+
+.header__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 110%;
+    font-family: 'Josefin Sans';
+
+    @include desktop {
+        position: absolute;
+        padding-top: 20px;
+        max-width: 472px;
+        font-size: 80px;
+        text-align: unset;
+    }
+}
+
+.header__text {
+    max-width: 470px;
+    padding-bottom: 30px;
+    font-size: 22px;
+    font-family: 'Alegreya';
+    line-height: 160%;
+    color: $text-color;
+    text-align: center;
+
+    @include tablet {
+        margin-left: 160px;
+    }
+
+    @include laptop {
+        margin-left: 270px;
+    }
+    @include desktop {
+        position: absolute;
+        margin-left: unset;
+        padding-top: 240px;
+        text-align: unset;
+    }
+}
+
+.header__btn {
+    min-width: 150px;
+    min-height: 50px;
+    margin-left: 60px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: 'Alegreya';
+
+    @include tablet {
+        margin-left: 160px;
+    }
+
+    @include laptop {
+        margin-left: 70px;
+    }
+
+    @include desktop {
+        min-width: 200px;
+        min-height: 58px;
+        margin-top: 450px;
+    }
+}
+.button-1 {
+    background: $second-color;
+    color: #FFFFFF;
+
+    @include laptop {
+        margin-left: 320px;
+    }
+    @include desktop {
+        margin-left: -10px;
+    }
+}
+
+.header__title--big {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Josefin Sans';
+    line-height: 160%;
+    color: rgba(255, 38, 37, 0.08);
+
+    @include laptop {
+        margin: 30px -20px;
+        font-size: 200px;
+        font-family: 'Josefin Sans';
+        color: rgba(255, 38, 37, 0.08);
+        z-index: -30;
+        }
+
+    @include desktop {
+    position: absolute;
+    margin: 50px -20px;
+    font-size: 180px;
+    font-family: 'Josefin Sans';
+    color: rgba(255, 38, 37, 0.08);
+    z-index: -30;
+    }
+}
+
+
+.header__pictures {
+    position: relative;
+}
+.header__image {
+    max-width: 500px;
+    z-index: -20;
+
+    @include tablet {
+        margin-left: 150px;
+    }
+
+    @include laptop {
+        max-width: 758px;
+        max-height: 1000px;
+        margin-left: 150px;
+        z-index: -5;
+    }
+    @include desktop {
+        max-width: 758px;
+        max-height: 1000px;
+        margin-left: 600px;
+        margin-top: -800px;
+        z-index: -5;
+    }
+}
+
+.header__decor {
+    position: absolute;
+    right: -10px;
+    bottom: -40px;
+    z-index: 10;
+
+    @include tablet{
+        left: 570px;
+    }
+    @include laptop{
+        left: 720px;
+    }
+    @include desktop{
+        left: 1150px;
+        top: 110px;
+    }
+}
+
+
+
+

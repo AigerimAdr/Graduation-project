@@ -1,0 +1,18 @@
+@import './config/_default.sass';
+@import './config/fonts';
+
+@import './config/_settings.sass';
+@import './config/_mixin.sass';
+
+@import '../node_modules/delicious-hamburgers/scss/base';
+@import '../node_modules/delicious-hamburgers/scss/animations/flatten';
+
+@import './common/header';
+@import './common/section-1';
+@import './common/section-2';
+@import './common/section-3';
+@import './common/section-4';
+@import './common/section-5';
+@import './common/section-6';
+@import './common/footer';
+
