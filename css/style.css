@@ -383,6 +383,7 @@ div.hamburger > .inner {
   min-height: 50px;
   margin-left: 60px;
   border-radius: 30px;
+  border: #FF2625;
   font-weight: bold;
   font-size: 22px;
   font-family: "Alegreya";
@@ -418,6 +419,10 @@ div.hamburger > .inner {
   .button-1 {
     margin-left: -10px;
   }
+}
+
+.button-2 {
+  border: 0.75px solid #FF2625;
 }
 
 .header__title--big {
@@ -1412,11 +1417,12 @@ div.hamburger > .inner {
 .section-6__btn {
   min-width: 100px;
   min-height: 48px;
-  border-radius: 30px;
   font-family: "Josefin Sans";
   font-weight: bold;
   font-size: 15px;
+  border-radius: 30px;
   background: #FF2625;
+  border: #FF2625;
   color: #FFFFFF;
   transition: 0.4s;
 }

@@ -98,11 +98,12 @@
 .section-6__btn {
     min-width: 100px;
     min-height: 48px;
-    border-radius: 30px;
     font-family: 'Josefin Sans';
     font-weight: bold;
     font-size: 15px;
+    border-radius: 30px;
     background: $second-color;
+    border: $second-color;
     color: #FFFFFF;
     transition: 0.4s;
 
